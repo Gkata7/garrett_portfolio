@@ -1,0 +1,399 @@
+/*Custom Style*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
+
+body {
+	font-family:'Montserrat',sans-serif;
+	padding-top: 50px;
+}
+h1{
+	font-size: 30pt;
+}
+.container.nomargin {
+	margin:0;
+	padding:0;
+	width:100%;
+}
+.padding {
+	padding:80px 0;
+}
+
+.margin {
+	margin: 30px 0;
+}
+.starter-template {
+	padding: 40px 15px;
+	text-align: center;
+}
+.title {
+	font-size:3em;
+	font-family:'Montserrat',sans-serif;
+	display:block;
+	color: #4C4556;
+}
+hr.star {
+	margin: 25px auto 30px;
+	padding: 0;
+	max-width: 250px;
+	border: 0;
+	border-top: solid 7px;
+	text-align: center;
+}
+hr.star:after{
+	color: #fff;
+	content: "\2605";
+	position: relative;
+	top: -.8em;
+	padding: 0 .25em;
+	font-size: 2.5em;
+}
+
+/* Navigation Styling */
+.navbar {
+	padding: 10px;
+}
+.navbar .navbar-brand {
+	color: #dfe6e9;
+	font-size: 1.4em;
+}
+.navbar .navbar-brand:hover {
+}
+.navbar-inverse .navbar-nav>li>a {
+	color: #dfe6e9;
+	font-size: 1.1em;
+}
+.navbar-inverse .navbar-nav>.active>a,
+.navbar-inverse .navbar-nav>.active>a:hover,
+.navbar-inverse .navbar-nav>.active>a:focus,
+.navbar-inverse .navbar-nav>.active>a {
+
+}
+
+/* Header Styling */
+#header {
+	background-image: url("https://static1.squarespace.com/static/58f87030be65944c6f640a8a/t/59b139edbebafb8e3e3176c5/1504786927648/portfolio-background.jpg?format=2500w");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+	max-width: 100%;
+}
+#header h1,h2 {
+	color: white;
+	padding-top: 60px;
+}
+#header .skills {
+	font-size: 2.7em
+}
+#header .icon{
+	margin-top: 50px;
+	display: block;
+}
+.fa-linkedin {
+	padding: 5px;
+}
+.fa-github {
+	padding: 5px;
+}
+
+/*down arrow icon*/
+#header a:hover {
+	color: #A3C6C4;
+}
+
+/* About Me Styling */
+#about {
+	background-color: #FFFFFF;
+}
+#about img {
+	border-radius: 12%;
+	height: 360px;
+	margin-left: 55px;
+}
+#about p {
+	font-weight: 500;
+	padding-top: 15px;
+	text-align: justify;
+	font-size: 1.3em;
+	font-family: 'Montserrat',sans-serif;
+}
+#about h3 {
+	font-family: 'Montserrat',sans-serif;
+	padding: 20px;
+	font-weight: 700;
+}
+#about .one {
+	text-align: center;
+	color: #A3C6C4;
+	font-weight: 600;
+	font-size: 1.5em;
+}
+
+/* Skills Styling */
+#skills {
+	text-align: center justify;
+	background-color: #E0E7E9;
+	color: #535c68;
+}
+#skills p {
+	color: #354649;
+	font-weight: 500;
+	font-size: 1.8em;
+	text-align: center;
+}
+#skills span {
+	font-weight: bold;
+	color: black;
+}
+#skills h3 {
+	padding-bottom: 30px;
+	font-weight: 700;
+	font-family: 'Montserrat',sans-serif;
+}
+#skills a:hover {
+	color: #A3C6C4;
+}
+
+/* Projects Styling */
+#projects {
+	font-family:'Montserrat',sans-serif;
+	background-color: #FFFFFF;
+	padding: 30px 50px 80px 50px;
+}
+#projects p {
+	font-family:'Montserrat',sans-serif;
+	font-weight: 450;
+	font-size: 1.4rem;
+	color: #93a4aa;
+	text-align: justify;
+}
+#projects .tech {
+	margin: 30px;
+	font-weight: bold;
+	color: #6C7A89;
+	text-align: justify;
+	text-justify: inter-word;
+}
+#projects img {
+
+}
+#projects h3 {
+	padding: 25px;
+	font-weight: 700;
+}
+#projects hr.star:after {
+
+}
+#projects .portfolio-item {
+	border-radius: 10px;
+}
+
+/*Hover effect*/
+#projects .portfolio-item img {
+	border-radius: 10px;
+	margin: 15px 0;
+	opacity: 1;
+	transition: all .3s;
+}
+
+#projects .portfolio-item img:hover {
+	margin: 5px 0;
+	opacity: 0.7;
+}
+
+
+/* Contact Styling */
+#contact {
+	background: #E0E7E9;
+	font-family:'Montserrat',sans-serif;
+	color: #535c68;
+	padding: 30px 30px 65px 80px;
+}
+.contact-form{
+	text-align: left;
+	width: 50%;
+	margin: 0 auto;
+}
+#contact h3 {
+	padding: 30px;
+	font-weight: 700;
+}
+#contact .has-success .form-control,
+#contact .has-success .control-label {
+
+}
+
+#contact-media .btn-social {
+	display:inline-block;
+	width:40px;
+	height:40px;
+	border:3px solid white;
+	border-radius:100%;
+	text-align:center;
+	font-size:20px;
+	font-weight:900;
+	line-height:35px;
+}
+
+#contact-media .btn-social i {
+}
+#contact-media .socials>a {
+	margin: 35px 12px;
+}
+#contact-media .socials>li:hover a {
+}
+#contact-media .socials>li:hover i {
+}
+
+#contact .btn-primary {
+}
+
+#contact .btn-primary:focus,
+#contact .btn-primary:hover{
+
+}
+#contact-media {
+	background-color: #354649;
+	color: white;
+}
+
+/* Footer Styling */
+footer {
+
+}
+
+footer p {
+	padding: 10px;
+	margin: 0;
+}
+
+
+
+/* ==== Media Queries ====*/
+
+/* iPads (Tablets) ----------- */
+@media only screen and (min-width: 768px) and (max-width : 1024px) {
+/* Styles */
+
+body {
+	background-image: url("https://static1.squarespace.com/static/58f87030be65944c6f640a8a/t/59b139edbebafb8e3e3176c5/1504786927648/portfolio-background.jpg?format=2500w");
+}
+#header {
+	padding-top: 100px;
+}
+.contact-form{
+	text-align:center;
+	width: 50%;
+	margin: 0 auto;
+}
+.title {
+
+}
+
+.padding {
+
+}
+#projects .portfolio-item {
+	border-radius: 10px;
+
+}
+
+/*Hover effect*/
+#projects .portfolio-item img {
+	border-radius: 10px;
+	margin: 15px 0;
+	opacity: 1;
+	transition: all .3s;
+}
+
+#projects .portfolio-item img:hover {
+	margin: 5px 0;
+	opacity: 0.7;
+}
+
+#contact  {
+
+}
+
+}
+
+/* Iphone/Android (Small Devices) ----------- */
+@media only screen and (min-width : 320px) and (max-width: 767px) {
+/* Styles */
+body{
+	font-size: 1.4rem;
+}
+#header {
+	background-image: url("https://static1.squarespace.com/static/58f87030be65944c6f640a8a/t/59b139edbebafb8e3e3176c5/1504786927648/portfolio-background.jpg?format=2500w");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+.title {
+	font-size:3em;
+}
+#about p {
+	padding-right: 10%;
+	padding-left: 10%;
+}
+#about img{
+	margin: 0 auto;
+	margin-top: 15%;
+	text-align: center;
+}
+#projects .portfolio-item {
+	border-radius: 10px;
+}
+
+/*Hover effect*/
+#projects .portfolio-item img {
+	border-radius: 10px;
+	margin: 15px 0;
+	opacity: 1;
+	transition: all .3s;
+}
+
+#projects .portfolio-item img:hover {
+	margin: 5px 0;
+	opacity: 0.7;
+}
+.contact-form{
+	text-align:center;
+	width: 50%;
+	margin: 0 auto;
+}
+.skills {
+	font-size: 1em;
+}
+#skills p {
+	color: #354649;
+	font-weight: 500;
+	font-size: 1.4em;
+	text-align: center justify;
+}
+
+#contact .socials>li {
+
+}
+
+.margin.no_margin_mobile {
+
+}
+
+
+.contact-form button.pull-right {
+
+}
+
+.social-media {
+
+}
+#contact {
+	background: #E0E7E9;
+	font-family:'Montserrat',sans-serif;
+	color: #535c68;
+	padding: 30px 30px 65px 80px;
+}
+
+}
