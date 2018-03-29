@@ -1,10 +1,19 @@
 $(document).ready(function() {
 	var height = $(window).height();
     $('#header').css('height', height);
-    //Scrollspy plugin
-    $('body').scrollspy({ target: '.navbar-spy'});
+    // $('body').scrollspy({ target: '.navbar-spy'});
 });
 
+// JQuery for scrolling menu
+$(document).on('click', 'a.page-scroll', function(event) {
+		var $anchor = $(this);
+		$('html, body').stop().animate({
+				scrollTop: ($($anchor.attr('href')).offset().top - 30)
+		}, 1450, 'easeInOutExpo');
+		event.preventDefault();
+});
+
+// Submitting info from the contact form to e-mail
 $('#form').submit(function(e){
 	var name = document.getElementById('inputName'),
 			email = document.getElementById('inputEmail'),

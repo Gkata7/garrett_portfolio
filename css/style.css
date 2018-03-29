@@ -1,9 +1,11 @@
 /*Custom Style*/
 @import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700);
-
+@import url('https://fonts.googleapis.com/css?family=Magra');
 body {
 	font-family:'Montserrat',sans-serif;
 	padding-top: 50px;
+	height: 100%;
+	width: 100%;
 }
 h1{
 	font-size: 30pt;
@@ -67,17 +69,21 @@ hr.star:after{
 .navbar-inverse .navbar-nav>.active>a:focus,
 .navbar-inverse .navbar-nav>.active>a {
 	background: #34495e;
-	border-radius: 10%;
+	border-radius: 8%;
 }
 
 /* Header Styling */
 #header {
-	background-image: url("https://static1.squarespace.com/static/58f87030be65944c6f640a8a/t/59b139edbebafb8e3e3176c5/1504786927648/portfolio-background.jpg?format=2500w");
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
+	background-image: url("../img/background.png");
+	position: relative;
+	-webkit-background-size: cover;
+	-moz-background-size:cover;
 	background-size: cover;
-	max-width: 100%;
+	-o-background-size: cover;
+	background-position: cover;
+	text-align: center;
+	width: 100%;
+	padding: 50px;
 }
 #header h1,h2 {
 	color: white;
@@ -104,19 +110,21 @@ hr.star:after{
 
 /* About Me Styling */
 #about {
-	font-family:'Magra',sans-serif;
+	font-family:'Montserrat',sans-serif;
+	padding: 55px;
 }
 #about img {
 	border-radius: 12%;
-	height: 330px;
+	height: 360px;
 	margin-left: 55px;
+	padding: 15px;
 }
 #about p {
 	font-weight: 500;
 	padding-top: 15px;
 	text-align: justify;
 	font-size: 1.3em;
-	font-family: 'Magra',sans-serif;
+	font-family: 'Montserrat',sans-serif;
 }
 #about h3 {
 	font-family: 'Montserrat',sans-serif;
@@ -135,6 +143,8 @@ hr.star:after{
 	text-align: center justify;
 	background-color: #E0E7E9;
 	color: #535c68;
+	padding-top: 100px;
+	padding-bottom: 150px;
 }
 #skills p {
 	color: #354649;
@@ -251,8 +261,6 @@ hr.star:after{
 #contact .display-none {
 	display: none;
 }
-#contact-media .btn-social i {
-}
 #contact-media .socials>a {
 	margin: 35px 12px;
 }
@@ -260,10 +268,6 @@ hr.star:after{
 }
 #contact-media .socials>li:hover i {
 }
-
-#contact .btn-primary {
-}
-
 #contact .btn-primary:focus,
 #contact .btn-primary:hover{
 
@@ -277,7 +281,6 @@ hr.star:after{
 footer {
 
 }
-
 footer p {
 	padding: 10px;
 	margin: 0;
@@ -289,8 +292,18 @@ footer p {
 
 /* iPads (Tablets) ----------- */
 @media only screen and (min-width: 768px) and (max-width : 1024px) {
-/* Styles */
-
+#header {
+	background-image: url("../img/background.png");
+	position: relative;
+	-webkit-background-size: cover;
+	-moz-background-size:cover;
+	background-size: cover;
+	-o-background-size: cover;
+	background-position: cover;
+	text-align: center;
+	width: 100%;
+	padding: 50px;
+}
 .contact-form{
 	/* text-align:center; */
 	width: 60%;
@@ -298,6 +311,9 @@ footer p {
 }
 .title {
 
+}
+#about {
+	text-align: center;
 }
 #about img {
 	padding: 10px;
@@ -324,7 +340,7 @@ footer p {
 #skills img {
 	width: 80%;
 	height: 80%;
-	padding: 6px;
+	padding: 10px;
 }
 footer p {
 	text-align: center;
@@ -349,8 +365,9 @@ body{
 	font-size:3em;
 }
 #about p {
-	padding-right: 10%;
-	padding-left: 10%;
+	/* padding-right: 10%;
+	padding-left: 10%; */
+	text-align: justify;
 }
 #about img{
 	margin: 0 auto;
@@ -374,7 +391,7 @@ body{
 }
 .contact-form{
 	text-align: center;
-	width: 80%;
+	width: 100%;
 	margin: 0 auto;
 	display: inline-block;
 }
@@ -398,8 +415,6 @@ body{
 .margin.no_margin_mobile {
 
 }
-
-
 .contact-form button.pull-right {
 
 }
