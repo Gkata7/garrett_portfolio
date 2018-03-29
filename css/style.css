@@ -1,6 +1,5 @@
 /*Custom Style*/
 @import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700);
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic);
 
 body {
 	font-family:'Montserrat',sans-serif;
@@ -57,6 +56,7 @@ hr.star:after{
 	font-size: 1.4em;
 }
 .navbar .navbar-brand:hover {
+	color: #34495e;
 }
 .navbar-inverse .navbar-nav>li>a {
 	color: #dfe6e9;
@@ -66,7 +66,8 @@ hr.star:after{
 .navbar-inverse .navbar-nav>.active>a:hover,
 .navbar-inverse .navbar-nav>.active>a:focus,
 .navbar-inverse .navbar-nav>.active>a {
-
+	background: #34495e;
+	border-radius: 10%;
 }
 
 /* Header Styling */
@@ -103,11 +104,11 @@ hr.star:after{
 
 /* About Me Styling */
 #about {
-	background-color: #FFFFFF;
+	font-family:'Magra',sans-serif;
 }
 #about img {
 	border-radius: 12%;
-	height: 360px;
+	height: 330px;
 	margin-left: 55px;
 }
 #about p {
@@ -115,7 +116,7 @@ hr.star:after{
 	padding-top: 15px;
 	text-align: justify;
 	font-size: 1.3em;
-	font-family: 'Montserrat',sans-serif;
+	font-family: 'Magra',sans-serif;
 }
 #about h3 {
 	font-family: 'Montserrat',sans-serif;
@@ -124,7 +125,7 @@ hr.star:after{
 }
 #about .one {
 	text-align: center;
-	color: #A3C6C4;
+	color: #354649;
 	font-weight: 600;
 	font-size: 1.5em;
 }
@@ -152,6 +153,19 @@ hr.star:after{
 }
 #skills a:hover {
 	color: #A3C6C4;
+}
+#skills img {
+	border-radius: 15%;
+	padding: 10px;
+	height: 75%;
+	width: 75%;
+}
+.border {
+	background-color: #A3C6C4;
+	display: block;
+	margin: 10px auto;
+	width: 60px;
+	height: 4px;
 }
 
 /* Projects Styling */
@@ -234,7 +248,9 @@ hr.star:after{
 	font-weight:900;
 	line-height:35px;
 }
-
+#contact .display-none {
+	display: none;
+}
 #contact-media .btn-social i {
 }
 #contact-media .socials>a {
@@ -275,29 +291,20 @@ footer p {
 @media only screen and (min-width: 768px) and (max-width : 1024px) {
 /* Styles */
 
-body {
-	background-image: url("https://static1.squarespace.com/static/58f87030be65944c6f640a8a/t/59b139edbebafb8e3e3176c5/1504786927648/portfolio-background.jpg?format=2500w");
-}
-#header {
-	padding-top: 100px;
-}
 .contact-form{
-	text-align:center;
-	width: 50%;
+	/* text-align:center; */
+	width: 60%;
 	margin: 0 auto;
 }
 .title {
 
 }
-
-.padding {
-
+#about img {
+	padding: 10px;
 }
 #projects .portfolio-item {
 	border-radius: 10px;
-
 }
-
 /*Hover effect*/
 #projects .portfolio-item img {
 	border-radius: 10px;
@@ -310,9 +317,24 @@ body {
 	margin: 5px 0;
 	opacity: 0.7;
 }
-
-#contact  {
-
+#contact h3 {
+	padding: 30px;
+	font-weight: 700;
+}
+#skills img {
+	width: 80%;
+	height: 80%;
+	padding: 6px;
+}
+footer p {
+	text-align: center;
+}
+.border{
+	background-color: #A3C6C4;
+	display: block;
+	margin-bottom: 30px;
+	width: 50px;
+	height: 4px;
 }
 
 }
@@ -322,13 +344,6 @@ body {
 /* Styles */
 body{
 	font-size: 1.4rem;
-}
-#header {
-	background-image: url("https://static1.squarespace.com/static/58f87030be65944c6f640a8a/t/59b139edbebafb8e3e3176c5/1504786927648/portfolio-background.jpg?format=2500w");
-	background-position: center center;
-	background-repeat: no-repeat;
-	background-attachment: fixed;
-	background-size: cover;
 }
 .title {
 	font-size:3em;
@@ -340,7 +355,6 @@ body{
 #about img{
 	margin: 0 auto;
 	margin-top: 15%;
-	text-align: center;
 }
 #projects .portfolio-item {
 	border-radius: 10px;
@@ -359,9 +373,13 @@ body{
 	opacity: 0.7;
 }
 .contact-form{
-	text-align:center;
-	width: 50%;
+	text-align: center;
+	width: 80%;
 	margin: 0 auto;
+	display: inline-block;
+}
+#contact h3 {
+	text-align: center;
 }
 .skills {
 	font-size: 1em;
@@ -372,11 +390,11 @@ body{
 	font-size: 1.4em;
 	text-align: center justify;
 }
-
-#contact .socials>li {
-
+#skills img {
+	width: 50%;
+	height: 50%;
+	padding: 20px;
 }
-
 .margin.no_margin_mobile {
 
 }
@@ -385,15 +403,18 @@ body{
 .contact-form button.pull-right {
 
 }
-
-.social-media {
-
-}
 #contact {
 	background: #E0E7E9;
 	font-family:'Montserrat',sans-serif;
 	color: #535c68;
 	padding: 30px 30px 65px 80px;
+}
+.border{
+	background-color: #A3C6C4;
+	display: block;
+	margin-bottom: 30px;
+	width: 50px;
+	height: 4px;
 }
 
 }
