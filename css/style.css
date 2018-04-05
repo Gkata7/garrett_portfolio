@@ -1,11 +1,13 @@
 /*Custom Style*/
 @import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700);
 @import url('https://fonts.googleapis.com/css?family=Magra');
+html,
 body {
 	font-family:'Montserrat',sans-serif;
-	padding-top: 50px;
 	height: 100%;
 	width: 100%;
+	margin: 0 auto;
+	padding: 0;
 }
 h1{
 	font-size: 30pt;
@@ -52,6 +54,9 @@ hr.star:after{
 /* Navigation Styling */
 .navbar {
 	padding: 10px;
+	-webkit-transition: all 0.35s;
+  -moz-transition: all 0.35s;
+  transition: all 0.35s;
 }
 .navbar .navbar-brand {
 	color: #dfe6e9;
@@ -83,7 +88,8 @@ hr.star:after{
 	background-position: cover;
 	text-align: center;
 	width: 100%;
-	padding: 50px;
+	padding-top: 100px;
+	padding-bottom: 150px;
 }
 #header h1,h2 {
 	color: white;
@@ -111,20 +117,22 @@ hr.star:after{
 /* About Me Styling */
 #about {
 	font-family:'Montserrat',sans-serif;
-	padding: 55px;
+	padding-top: 100px;
+	padding-bottom: 130px;
 }
 #about img {
-	border-radius: 12%;
-	height: 360px;
-	margin-left: 55px;
-	padding: 15px;
+	border-radius: 300px;
+	width: 300px;
+	height: 330px;
+	border: 10px solid #eff0f4;
 }
 #about p {
 	font-weight: 500;
 	padding-top: 15px;
 	text-align: justify;
-	font-size: 1.3em;
-	font-family: 'Montserrat',sans-serif;
+	font-size: 1.4em;
+	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
+
 }
 #about h3 {
 	font-family: 'Montserrat',sans-serif;
@@ -143,7 +151,7 @@ hr.star:after{
 	text-align: center justify;
 	background-color: #E0E7E9;
 	color: #535c68;
-	padding-top: 100px;
+	padding-top: 80px;;
 	padding-bottom: 150px;
 }
 #skills p {
@@ -182,7 +190,8 @@ hr.star:after{
 #projects {
 	font-family:'Montserrat',sans-serif;
 	background-color: #FFFFFF;
-	padding: 30px 50px 80px 50px;
+	padding-top: 80px;
+	padding-bottom: 150px;
 }
 #projects p {
 	font-family:'Montserrat',sans-serif;
@@ -199,7 +208,9 @@ hr.star:after{
 	text-justify: inter-word;
 }
 #projects img {
-
+	border-radius: 15px;
+	width: 80%;
+	height: 80%;
 }
 #projects h3 {
 	padding: 25px;
@@ -231,7 +242,8 @@ hr.star:after{
 	background: #E0E7E9;
 	font-family:'Montserrat',sans-serif;
 	color: #535c68;
-	padding: 30px 30px 65px 80px;
+	padding-top: 80px;
+	padding-bottom: 110px;
 }
 .contact-form{
 	text-align: left;
@@ -292,31 +304,21 @@ footer p {
 
 /* iPads (Tablets) ----------- */
 @media only screen and (min-width: 768px) and (max-width : 1024px) {
-#header {
-	background-image: url("../img/background.png");
-	position: relative;
-	-webkit-background-size: cover;
-	-moz-background-size:cover;
-	background-size: cover;
-	-o-background-size: cover;
-	background-position: cover;
-	text-align: center;
-	width: 100%;
-	padding: 50px;
-}
 .contact-form{
-	/* text-align:center; */
-	width: 60%;
+	text-align:center;
+	width: 70%;
 	margin: 0 auto;
-}
-.title {
-
 }
 #about {
 	text-align: center;
 }
 #about img {
-	padding: 10px;
+	padding: 5px;
+}
+#projects img {
+	width: 60%;
+	height: 60%;
+	display: inline-block;
 }
 #projects .portfolio-item {
 	border-radius: 10px;
@@ -324,9 +326,11 @@ footer p {
 /*Hover effect*/
 #projects .portfolio-item img {
 	border-radius: 10px;
-	margin: 15px 0;
+	margin: 10px 0;
+	padding: 0;
 	opacity: 1;
 	transition: all .3s;
+	/* width: 50%; */
 }
 
 #projects .portfolio-item img:hover {
@@ -338,19 +342,12 @@ footer p {
 	font-weight: 700;
 }
 #skills img {
-	width: 80%;
+	width: 90%;
 	height: 80%;
 	padding: 10px;
 }
 footer p {
 	text-align: center;
-}
-.border{
-	background-color: #A3C6C4;
-	display: block;
-	margin-bottom: 30px;
-	width: 50px;
-	height: 4px;
 }
 
 }
@@ -365,16 +362,18 @@ body{
 	font-size:3em;
 }
 #about p {
-	/* padding-right: 10%;
-	padding-left: 10%; */
-	text-align: justify;
+	text-align: center;
 }
 #about img{
 	margin: 0 auto;
 	margin-top: 15%;
+	position: relative;
 }
 #projects .portfolio-item {
 	border-radius: 10px;
+}
+#projects img {
+	width: 50%;
 }
 
 /*Hover effect*/
@@ -391,7 +390,7 @@ body{
 }
 .contact-form{
 	text-align: center;
-	width: 100%;
+	width: 70%;
 	margin: 0 auto;
 	display: inline-block;
 }
@@ -408,25 +407,16 @@ body{
 	text-align: center justify;
 }
 #skills img {
-	width: 50%;
-	height: 50%;
+	width: 40%;
+	height: 40%;
 	padding: 20px;
-}
-.margin.no_margin_mobile {
-
-}
-.contact-form button.pull-right {
-
 }
 #contact {
 	background: #E0E7E9;
 	font-family:'Montserrat',sans-serif;
 	color: #535c68;
-	padding: 30px 30px 65px 80px;
 }
 .border{
-	background-color: #A3C6C4;
-	display: block;
 	margin-bottom: 30px;
 	width: 50px;
 	height: 4px;
