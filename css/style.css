@@ -121,13 +121,13 @@ hr.star:after{
 	padding-bottom: 130px;
 }
 #about img {
-	border-radius: 300px;
-	width: 300px;
-	height: 330px;
+	border-radius: 270px;
+	width: 250px;
+	height: 250px;
 	border: 10px solid #eff0f4;
 }
 #about p {
-	font-weight: 500;
+	font-weight: 400;
 	padding-top: 15px;
 	text-align: justify;
 	font-size: 1.4em;
@@ -196,7 +196,7 @@ hr.star:after{
 #projects p {
 	font-family:'Montserrat',sans-serif;
 	font-weight: 450;
-	font-size: 1.4rem;
+	font-size: 1.5rem;
 	color: #93a4aa;
 	text-align: justify;
 }
@@ -373,7 +373,7 @@ body{
 	border-radius: 10px;
 }
 #projects img {
-	width: 50%;
+	width: 70%;
 }
 
 /*Hover effect*/
@@ -407,8 +407,8 @@ body{
 	text-align: center justify;
 }
 #skills img {
-	width: 40%;
-	height: 40%;
+	width: 50%;
+	height: 50%;
 	padding: 20px;
 }
 #contact {
