@@ -1,13 +1,15 @@
 /*Custom Style*/
-@import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700);
-@import url('https://fonts.googleapis.com/css?family=Magra');
+/* @import url(http://fonts.googleapis.com/css?family=Montserrat+Alternates:400,700);
+@import url('https://fonts.googleapis.com/css?family=Magra'); */
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 html,
 body {
-	font-family:'Montserrat',sans-serif;
+	font-family:'Raleway',sans-serif;
 	height: 100%;
 	width: 100%;
 	margin: 0 auto;
 	padding: 0;
+	font-weight: 800;
 }
 h1{
 	font-size: 30pt;
@@ -30,7 +32,7 @@ h1{
 }
 .title {
 	font-size:3em;
-	font-family:'Montserrat',sans-serif;
+	font-family:'Raleway',sans-serif;
 	display:block;
 	color: #4C4556;
 }
@@ -90,6 +92,7 @@ hr.star:after{
 	width: 100%;
 	padding-top: 100px;
 	padding-bottom: 150px;
+	opacity: 0.8;
 }
 #header h1,h2 {
 	color: white;
@@ -116,26 +119,29 @@ hr.star:after{
 
 /* About Me Styling */
 #about {
-	font-family:'Montserrat',sans-serif;
+	font-family:'Raleway',sans-serif;
 	padding-top: 100px;
 	padding-bottom: 130px;
 }
 #about img {
-	border-radius: 270px;
-	width: 250px;
-	height: 250px;
-	border: 10px solid #eff0f4;
+	border-radius: 80%;
+	width: 220px;
+	height: 220px;
+	border: 3px solid #eff0f4;
+	margin-top: 80px;
+	margin-left: -50px;
 }
 #about p {
 	font-weight: 400;
-	padding-top: 15px;
+	padding-top: 4%;
+	padding-left: 7%;
+	padding-right: 7%;
 	text-align: justify;
 	font-size: 1.4em;
-	font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif;
-
+	font-weight: bold;
 }
 #about h3 {
-	font-family: 'Montserrat',sans-serif;
+	font-family: 'Raleway',sans-serif;
 	padding: 20px;
 	font-weight: 700;
 }
@@ -167,7 +173,7 @@ hr.star:after{
 #skills h3 {
 	padding-bottom: 30px;
 	font-weight: 700;
-	font-family: 'Montserrat',sans-serif;
+	font-family: 'Raleway',sans-serif;
 }
 #skills a:hover {
 	color: #A3C6C4;
@@ -175,8 +181,8 @@ hr.star:after{
 #skills img {
 	border-radius: 15%;
 	padding: 10px;
-	height: 75%;
-	width: 75%;
+	height: 65%;
+	width: 65%;
 }
 .border {
 	background-color: #A3C6C4;
@@ -188,24 +194,21 @@ hr.star:after{
 
 /* Projects Styling */
 #projects {
-	font-family:'Montserrat',sans-serif;
+	font-family:'Raleway',sans-serif;
 	background-color: #FFFFFF;
 	padding-top: 80px;
 	padding-bottom: 150px;
 }
 #projects p {
-	font-family:'Montserrat',sans-serif;
+	font-family:'Raleway',sans-serif;
 	font-weight: 450;
 	font-size: 1.5rem;
 	color: #93a4aa;
 	text-align: justify;
 }
 #projects .tech {
-	margin: 30px;
 	font-weight: bold;
 	color: #6C7A89;
-	text-align: justify;
-	text-justify: inter-word;
 }
 #projects img {
 	border-radius: 15px;
@@ -240,7 +243,7 @@ hr.star:after{
 /* Contact Styling */
 #contact {
 	background: #E0E7E9;
-	font-family:'Montserrat',sans-serif;
+	font-family:'Raleway',sans-serif;
 	color: #535c68;
 	padding-top: 80px;
 	padding-bottom: 110px;
@@ -312,12 +315,9 @@ footer p {
 #about {
 	text-align: center;
 }
-#about img {
-	padding: 5px;
-}
 #projects img {
-	width: 60%;
-	height: 60%;
+	width: 50%;
+	height: 50%;
 	display: inline-block;
 }
 #projects .portfolio-item {
@@ -368,6 +368,8 @@ body{
 	margin: 0 auto;
 	margin-top: 15%;
 	position: relative;
+	width: 140px;
+	height: 140px;
 }
 #projects .portfolio-item {
 	border-radius: 10px;
@@ -421,5 +423,6 @@ body{
 	width: 50px;
 	height: 4px;
 }
+
 
 }
